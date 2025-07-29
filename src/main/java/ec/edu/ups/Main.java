@@ -1,17 +1,64 @@
 package ec.edu.ups;
+import javax.swing.JOptionPane;
+import javax.swing.SwingUtilities;
+import ec.edu.ups.vista.MazeFrame;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+
+
 public class Main {
-    public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+    public static void main(String[] paramArrayOfString) {
+        SwingUtilities.invokeLater(() -> {
+            int[] arrayOfInt = solicitarDimensiones();
+            if (arrayOfInt != null)
+                new MazeFrame(arrayOfInt[0], arrayOfInt[1]);
+        });
+    }
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
+    public static int[] solicitarDimensiones() {
+        int filas = -1;
+        int columnas = -1;
+        boolean inputValido = false;
+
+        while (!inputValido) {
+            String str1 = JOptionPane.showInputDialog("Ingrese n de filas:");
+            if (str1 == null) {
+                return null;
+            }
+
+            try {
+                filas = Integer.parseInt(str1.trim());
+                if (filas <= 4) {
+                    JOptionPane.showMessageDialog(null, "Las filas deben ser mayores a 4.");
+                    continue;
+                }
+                inputValido = true;
+            } catch (NumberFormatException e) {
+                JOptionPane.showMessageDialog(null, "Ingrese un número válido para las filas.");
+                continue;
+            }
         }
+
+        inputValido = false;
+
+        while (!inputValido) {
+            String str2 = JOptionPane.showInputDialog("Ingrese n de columnas:");
+            if (str2 == null) {
+                return null;
+            }
+
+            try {
+                columnas = Integer.parseInt(str2.trim());
+                if (columnas <= 4) {
+                    JOptionPane.showMessageDialog(null, "Las columnas deben ser mayores a 4.");
+                    continue;
+                }
+                inputValido = true;
+            } catch (NumberFormatException e) {
+                JOptionPane.showMessageDialog(null, "Ingrese un número válido para las columnas.");
+                continue;
+            }
+        }
+
+        return new int[] { filas, columnas };
     }
 }
