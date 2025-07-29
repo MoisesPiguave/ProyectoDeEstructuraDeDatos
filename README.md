@@ -3,8 +3,8 @@
                                   Informe del Proyecto Final
 
 ______________________________________________________________________________________________________________ 
+<img width="897" height="269" alt="Logo_Universidad_Politécnica_Salesiana_del_Ecuador" src="https://github.com/user-attachments/assets/945ff054-76ed-4c5b-9e32-cb6801eddd66" />
 
-![alt text](image-5.png)   
 
 # 🔍 Proyecto Final: Resolución de Laberintos con Algoritmos de Búsqueda
 
