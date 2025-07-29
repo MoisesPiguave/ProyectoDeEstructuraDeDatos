@@ -20,7 +20,7 @@ public class Main {
         boolean inputValido = false;
 
         while (!inputValido) {
-            String str1 = JOptionPane.showInputDialog("Ingrese n de filas:");
+            String str1 = JOptionPane.showInputDialog("Ingrese numero de filas :) ");
             if (str1 == null) {
                 return null;
             }
@@ -28,7 +28,7 @@ public class Main {
             try {
                 filas = Integer.parseInt(str1.trim());
                 if (filas <= 4) {
-                    JOptionPane.showMessageDialog(null, "Las filas deben ser mayores a 4.");
+                    JOptionPane.showMessageDialog(null, "Las filas deben ser mayores a 4 :( ");
                     continue;
                 }
                 inputValido = true;

@@ -258,12 +258,12 @@ public class MazeFrame extends JFrame {
         jPanel1.add(jLabel1);
         jPanel1.add(Box.createVerticalStrut(10));
         JPanel jPanel2 = new JPanel(new FlowLayout(FlowLayout.LEFT));
-        JLabel jLabel2 = new JLabel("<html><a href=''>MoisesPiguave/ProyectoFinalDeEstructuraDeDatos</a></html>");
+        JLabel jLabel2 = new JLabel("<html><a href=''>MoisesPiguave/ProyectoDeEstructuraDeDatos</a></html>");
         jLabel2.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
         jLabel2.addMouseListener(new MouseAdapter() {
             public void mouseClicked(MouseEvent param1MouseEvent) {
                 try {
-                    Desktop.getDesktop().browse(new URI("https://github.com/MoisesPiguave/ProyectoFinalDeEstructuraDeDatos"));
+                    Desktop.getDesktop().browse(new URI("https://github.com/MoisesPiguave/ProyectoDeEstructuraDeDatos"));
                 } catch (Exception exception) {
                     exception.printStackTrace();
                 }
