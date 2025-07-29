@@ -190,6 +190,12 @@ Se guarda el resultado (tiempo, longitud) en results.csv.
 
 El usuario puede ver los resultados previos en tabla o gráfico comparativo.
 
+
+
+*Diagrama UML
+![WhatsApp Image 2025-07-29 at 00 32 33_9ce29841](https://github.com/user-attachments/assets/24e48ed8-d51c-4096-aa9b-2673bc76c9be)
+
+
 ✅ Conclusiones 
 🔹 Pablo Feijo
 A lo largo del desarrollo del proyecto, pude analizar cómo diferentes algoritmos abordan la resolución de laberintos de manera distinta. En mi experiencia, el algoritmo BFS (Breadth-First Search) resultó ser el más óptimo, ya que garantiza la ruta más corta en términos de número de pasos. A diferencia del DFS o la recursividad simple, BFS evita caminos innecesarios y encuentra rápidamente la salida en laberintos grandes o complejos. Además, su implementación fue relativamente clara al manejar estructuras como colas. Considero que es la mejor opción cuando se busca una solución eficiente y precisa.
