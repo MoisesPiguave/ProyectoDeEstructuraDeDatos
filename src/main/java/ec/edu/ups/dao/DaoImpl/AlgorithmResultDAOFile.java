@@ -1,4 +1,4 @@
-package ec.edu.ups.dao;
+package ec.edu.ups.dao.DaoImpl;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -8,6 +8,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import ec.edu.ups.dao.AlgorithmResultDAO;
 import ec.edu.ups.models.AlgorithmResult;
 
 /**
