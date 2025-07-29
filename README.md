@@ -189,3 +189,16 @@ Presiona "Resolver": el algoritmo ejecuta y muestra el camino visualmente.
 Se guarda el resultado (tiempo, longitud) en results.csv.
 
 El usuario puede ver los resultados previos en tabla o gráfico comparativo.
+
+✅ Conclusiones 
+🔹 Pablo Feijo
+A lo largo del desarrollo del proyecto, pude analizar cómo diferentes algoritmos abordan la resolución de laberintos de manera distinta. En mi experiencia, el algoritmo BFS (Breadth-First Search) resultó ser el más óptimo, ya que garantiza la ruta más corta en términos de número de pasos. A diferencia del DFS o la recursividad simple, BFS evita caminos innecesarios y encuentra rápidamente la salida en laberintos grandes o complejos. Además, su implementación fue relativamente clara al manejar estructuras como colas. Considero que es la mejor opción cuando se busca una solución eficiente y precisa.
+
+🔹 Cristian Moscoso
+Durante el proyecto observé que el algoritmo recursivo con cache (memoización) tiene ventajas importantes frente al recursivo tradicional. Al evitar el recalculo de rutas ya exploradas, logra disminuir el tiempo de ejecución y mejora considerablemente el rendimiento, especialmente en laberintos grandes o con muchas bifurcaciones. Aunque es más complejo de implementar, demuestra la utilidad de la programación dinámica para optimizar problemas de recorrido. Desde mi perspectiva, este algoritmo es el más balanceado entre eficiencia y claridad.
+
+🔹 Moises Piguave
+Desde mi punto de vista, el algoritmo DFS (Depth-First Search) fue el más interesante por su simplicidad y facilidad de implementación. Aunque no siempre garantiza el camino más corto, tiene un rendimiento aceptable y consume poca memoria, ya que se enfoca en una ruta hasta el final antes de retroceder. En laberintos pequeños o con pocas salidas posibles, puede dar resultados rápidos. En mi experiencia, DFS fue el más intuitivo para entender cómo se comporta un algoritmo de búsqueda en profundidad.
+
+🔹 Sebastian Calderón
+Para mí, el enfoque más completo fue el del algoritmo recursivo con backtracking, ya que explora todas las rutas posibles y es capaz de revertir decisiones incorrectas. Aunque es más costoso computacionalmente, ofrece una solución robusta cuando no se conocen las características del laberinto de antemano. Su implementación me ayudó a comprender la lógica detrás de la exploración exhaustiva y la toma de decisiones basada en retroceso. Es especialmente útil en escenarios donde la solución está oculta entre múltiples caminos erróneos.
