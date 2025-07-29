@@ -1,3 +1,11 @@
+                               Universidad Politécnica Salesiana   
+ 
+                                  Informe del Proyecto Final
+
+______________________________________________________________________________________________________________ 
+
+![alt text](image-5.png)   
+
 # 🔍 Proyecto Final: Resolución de Laberintos con Algoritmos de Búsqueda
 
 ## 🧠 Información General
@@ -6,19 +14,25 @@
 - **Asignatura:** Estructura de Datos
 - **Carrera:** Computación
 - **Estudiantes:** Cristian Moscoso, Pablo Feijo, Moises Piguave, Sebastian Calderon.
-- **Correo institucional:** [tu_correo@correo.edu.ec]
+- **Correo institucional: pfeijo@est.ups.edu.ec , cmoscosot@est.ups.edu.ec , mpiguaves@est.ups.edu.ec, scalderonm@est.ups.edu.ec
 - **Fecha:** 7/29/2025
 - **Profesor:** Ing. Pablo Torres
 
 ---
 
-## 🎯 Descripción del Problema
+## 🎯 Descripción del Problema y Propuesta de Solución
 
 Este proyecto tiene como objetivo encontrar la **ruta óptima** desde un punto de inicio (A) hasta un destino (B) dentro de un laberinto representado como una **matriz de celdas**. Cada celda puede ser transitable o no. La aplicación permite comparar distintos algoritmos de búsqueda y optimización en un entorno visual.
 
----
+Se desarrollaron cuatro métodos para encontrar la ruta entre los puntos A y B en el laberinto:
 
-## 🧪 Propuesta de Solución
+-	Método Recursivo Simple: Implementa una búsqueda en profundidad utilizando recursión para explorar todas las posibles rutas.
+
+-	Método con Cache (Programación Dinámica): Mejora el método recursivo utilizando una cache para almacenar los resultados de subproblemas ya resueltos, evitando cálculos redundantes.
+
+-	BFS (Breadth-First Search): Implementa una búsqueda en anchura para explorar todas las rutas a una cierta distancia antes de avanzar a rutas más lejanas.
+
+-	DFS (Depth-First Search): Implementa una búsqueda en profundidad para explorar todas las posibles rutas desde el punto inicial.
 
 ### 📚 Marco Teórico
 
